@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>RubyHome</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container container-header">
+          <div class="logo">
+            <a href="" class="logo__link"
+              ><img class="logo__media" src="./images/logo.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="active-navbar">
+            <div class="navigation">
+              <nav class="navbar">
+                <div class="navbar__wrap">
+                  <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div>
+                  </div>
+                  <ul class="menu" id="menu">
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Properties </a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">About us</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="popup" id="popup"></div>
+            </div>
+
+            <div class="header-btn">
+              <button class="btn__contact">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="partners">
+          <div class="container container-partners">
+            <div class="partners__headline first-letter">
+              <h2 class="partners__heading">Our Partners</h2>
+            </div>
+
+            <div class="partners__inner">
+              <div class="partners__logo">
+                <a href="#"
+                  ><img
+                    class="partners-media"
+                    src="./images/biotech.svg"
+                    alt="biotech"
+                /></a>
+              </div>
+              <div class="partners__logo">
+                <a href="#"
+                  ><img
+                    class="partners-media"
+                    src="./images/express.svg"
+                    alt="express"
+                /></a>
+              </div>
+              <div class="partners__logo">
+                <a href="#"
+                  ><img
+                    class="partners-media"
+                    src="./images/smile.svg"
+                    alt="smileHome"
+                /></a>
+              </div>
+              <div class="partners__logo">
+                <a href="#"
+                  ><img
+                    class="partners-media"
+                    src="./images/connect.svg"
+                    alt="connect"
+                /></a>
+              </div>
+              <div class="partners__logo">
+                <a href="#"
+                  ><img
+                    class="partners-media"
+                    src="./images/home_build.svg"
+                    alt="homeBuild"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="propertis">
+          <div class="container container-propertis">
+            <div class="propertis__headline first-letter">
+              <div class="propertis-head">
+                <a href="#"
+                  ><h2 class="propertis__heading heading">
+                    Popular Properties
+                  </h2></a
+                >
+              </div>
+              <div class="propertis__link">
+                <a href="#">VIEW ALL</a>
+              </div>
+            </div>
+
+            <div class="propertis__inner">
+              <!-- 1 card -->
+              <div class="propertis-card">
+                <div class="card__media">
+                  <img
+                    src="./images/popular-Capital.jpg"
+                    alt="capital"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card__info">
+                  <div class="card__head">
+                    <div class="card-headen">
+                      <h4>Capital hill residence</h4>
+                    </div>
+                    <div class="card-headen__heart">
+                      <img
+                        class="heart-img"
+                        src="./images/grey-heart.svg"
+                        alt="heart"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card__info-location">
+                    <div class="location-media">
+                      <img
+                        class="location-img"
+                        src="./images/popular-location.svg"
+                        alt="location"
+                      />
+                    </div>
+                    <div class="location-info">
+                      <span>East London</span>
+                    </div>
+                  </div>
+
+                  <div class="card__info-filling">
+                    <div class="filling-bedroom">
+                      <div class="bedroom-media">
+                        <img
+                          src="./images/popular-bedroom.svg"
+                          alt="bedroom"
+                          class="bedroom-img"
+                        />
+                      </div>
+                      <div class="bedroom-number">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="filling-kitchen">
+                      <div class="kitchen-media">
+                        <img
+                          src="./images/popular-kitchen.svg"
+                          alt="kitchen"
+                          class="kitchen-img"
+                        />
+                      </div>
+                      <div class="kitchen-number">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="filling-bathroom">
+                      <div class="bathroom-media">
+                        <img
+                          src="./images/popular-bathroom.svg"
+                          alt="bathroom"
+                          class="bathroom-img"
+                        />
+                      </div>
+                      <div class="bathroom-number">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__info-total">
+                    <div class="total-price">
+                      <span>$5527.00</span>
+                    </div>
+                    <div class="total-btn">
+                      <a href="#" class="total__link">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2card -->
+              <div class="propertis-card">
+                <div class="card__media">
+                  <img
+                    src="./images/popular-Picket.jpg"
+                    alt="Picket"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card__info">
+                  <div class="card__head">
+                    <div class="card-headen">
+                      <h4>Picket Fence Realty</h4>
+                    </div>
+                    <div class="card-headen__heart">
+                      <img
+                        class="heart-img"
+                        src="./images/grey-heart.svg"
+                        alt="heart"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card__info-location">
+                    <div class="location-media">
+                      <img
+                        class="location-img"
+                        src="./images/popular-location.svg"
+                        alt="location"
+                      />
+                    </div>
+                    <div class="location-info">
+                      <span>East London</span>
+                    </div>
+                  </div>
+
+                  <div class="card__info-filling">
+                    <div class="filling-bedroom">
+                      <div class="bedroom-media">
+                        <img
+                          src="./images/popular-bedroom.svg"
+                          alt="bedroom"
+                          class="bedroom-img"
+                        />
+                      </div>
+                      <div class="bedroom-number">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="filling-kitchen">
+                      <div class="kitchen-media">
+                        <img
+                          src="./images/popular-kitchen.svg"
+                          alt="kitchen"
+                          class="kitchen-img"
+                        />
+                      </div>
+                      <div class="kitchen-number">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="filling-bathroom">
+                      <div class="bathroom-media">
+                        <img
+                          src="./images/popular-bathroom.svg"
+                          alt="bathroom"
+                          class="bathroom-img"
+                        />
+                      </div>
+                      <div class="bathroom-number">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__info-total">
+                    <div class="total-price">
+                      <span>$6727.00</span>
+                    </div>
+                    <div class="total-btn">
+                      <a href="#" class="total__link">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3card -->
+              <div class="propertis-card">
+                <div class="card__media">
+                  <img
+                    src="./images/popular-Banyon.jpg"
+                    alt="Banyon"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card__info">
+                  <div class="card__head">
+                    <div class="card-headen">
+                      <h4>Banyon Tree Realty</h4>
+                    </div>
+                    <div class="card-headen__heart">
+                      <img
+                        class="heart-img"
+                        src="./images/grey-heart.svg"
+                        alt="heart"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card__info-location">
+                    <div class="location-media">
+                      <img
+                        class="location-img"
+                        src="./images/popular-location.svg"
+                        alt="location"
+                      />
+                    </div>
+                    <div class="location-info">
+                      <span>East London</span>
+                    </div>
+                  </div>
+
+                  <div class="card__info-filling">
+                    <div class="filling-bedroom">
+                      <div class="bedroom-media">
+                        <img
+                          src="./images/popular-bedroom.svg"
+                          alt="bedroom"
+                          class="bedroom-img"
+                        />
+                      </div>
+                      <div class="bedroom-number">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="filling-kitchen">
+                      <div class="kitchen-media">
+                        <img
+                          src="./images/popular-kitchen.svg"
+                          alt="kitchen"
+                          class="kitchen-img"
+                        />
+                      </div>
+                      <div class="kitchen-number">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="filling-bathroom">
+                      <div class="bathroom-media">
+                        <img
+                          src="./images/popular-bathroom.svg"
+                          alt="bathroom"
+                          class="bathroom-img"
+                        />
+                      </div>
+                      <div class="bathroom-number">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__info-total">
+                    <div class="total-price">
+                      <span>$4327.00</span>
+                    </div>
+                    <div class="total-btn">
+                      <a href="#" class="total__link">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4card -->
+              <div class="propertis-card">
+                <div class="card__media">
+                  <img
+                    src="./images/popular-Corsair.jpg"
+                    alt="Corsair"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card__info">
+                  <div class="card__head">
+                    <div class="card-headen">
+                      <h4>Corsair Real Estate</h4>
+                    </div>
+                    <div class="card-headen__heart">
+                      <img
+                        class="heart-img"
+                        src="./images/grey-heart.svg"
+                        alt="heart"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card__info-location">
+                    <div class="location-media">
+                      <img
+                        class="location-img"
+                        src="./images/popular-location.svg"
+                        alt="location"
+                      />
+                    </div>
+                    <div class="location-info">
+                      <span>East London</span>
+                    </div>
+                  </div>
+
+                  <div class="card__info-filling">
+                    <div class="filling-bedroom">
+                      <div class="bedroom-media">
+                        <img
+                          src="./images/popular-bedroom.svg"
+                          alt="bedroom"
+                          class="bedroom-img"
+                        />
+                      </div>
+                      <div class="bedroom-number">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="filling-kitchen">
+                      <div class="kitchen-media">
+                        <img
+                          src="./images/popular-kitchen.svg"
+                          alt="kitchen"
+                          class="kitchen-img"
+                        />
+                      </div>
+                      <div class="kitchen-number">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="filling-bathroom">
+                      <div class="bathroom-media">
+                        <img
+                          src="./images/popular-bathroom.svg"
+                          alt="bathroom"
+                          class="bathroom-img"
+                        />
+                      </div>
+                      <div class="bathroom-number">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__info-total">
+                    <div class="total-price">
+                      <span>$4427.00</span>
+                    </div>
+                    <div class="total-btn">
+                      <a href="#" class="total__link">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 5card -->
+              <div class="propertis-card">
+                <div class="card__media">
+                  <img
+                    src="./images/popular-Sequoia.jpg"
+                    alt="Sequoia"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card__info">
+                  <div class="card__head">
+                    <div class="card-headen">
+                      <h4>Sequoia Real Estate</h4>
+                    </div>
+                    <div class="card-headen__heart">
+                      <img
+                        class="heart-img"
+                        src="./images/grey-heart.svg"
+                        alt="heart"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card__info-location">
+                    <div class="location-media">
+                      <img
+                        class="location-img"
+                        src="./images/popular-location.svg"
+                        alt="location"
+                      />
+                    </div>
+                    <div class="location-info">
+                      <span>East London</span>
+                    </div>
+                  </div>
+
+                  <div class="card__info-filling">
+                    <div class="filling-bedroom">
+                      <div class="bedroom-media">
+                        <img
+                          src="./images/popular-bedroom.svg"
+                          alt="bedroom"
+                          class="bedroom-img"
+                        />
+                      </div>
+                      <div class="bedroom-number">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="filling-kitchen">
+                      <div class="kitchen-media">
+                        <img
+                          src="./images/popular-kitchen.svg"
+                          alt="kitchen"
+                          class="kitchen-img"
+                        />
+                      </div>
+                      <div class="kitchen-number">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="filling-bathroom">
+                      <div class="bathroom-media">
+                        <img
+                          src="./images/popular-bathroom.svg"
+                          alt="bathroom"
+                          class="bathroom-img"
+                        />
+                      </div>
+                      <div class="bathroom-number">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__info-total">
+                    <div class="total-price">
+                      <span>$4527.00</span>
+                    </div>
+                    <div class="total-btn">
+                      <a href="#" class="total__link">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 6card -->
+              <div class="propertis-card">
+                <div class="card__media">
+                  <img
+                    src="./images/popular-Strive.jpg"
+                    alt="Strive"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card__info">
+                  <div class="card__head">
+                    <div class="card-headen">
+                      <h4>Strive Partners Realty</h4>
+                    </div>
+                    <div class="card-headen__heart">
+                      <img
+                        class="heart-img"
+                        src="./images/grey-heart.svg"
+                        alt="grey-heart"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card__info-location">
+                    <div class="location-media">
+                      <img
+                        class="location-img"
+                        src="./images/popular-location.svg"
+                        alt="location"
+                      />
+                    </div>
+                    <div class="location-info">
+                      <span>East London</span>
+                    </div>
+                  </div>
+
+                  <div class="card__info-filling">
+                    <div class="filling-bedroom">
+                      <div class="bedroom-media">
+                        <img
+                          src="./images/popular-bedroom.svg"
+                          alt="bedroom"
+                          class="bedroom-img"
+                        />
+                      </div>
+                      <div class="bedroom-number">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="filling-kitchen">
+                      <div class="kitchen-media">
+                        <img
+                          src="./images/popular-kitchen.svg"
+                          alt="kitchen"
+                          class="kitchen-img"
+                        />
+                      </div>
+                      <div class="kitchen-number">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="filling-bathroom">
+                      <div class="bathroom-media">
+                        <img
+                          src="./images/popular-bathroom.svg"
+                          alt="bathroom"
+                          class="bathroom-img"
+                        />
+                      </div>
+                      <div class="bathroom-number">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__info-total">
+                    <div class="total-price">
+                      <span>$5527.00</span>
+                    </div>
+                    <div class="total-btn">
+                      <a href="#" class="total__link">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- - -->
+            </div>
+          </div>
+        </section>
+
+        <!-- feature -->
+        <section class="feature">
+          <div class="container container-feature">
+            <div class="feature__headline first-letter">
+              <div class="feature-head">
+                <a href="#"
+                  ><h2 class="feature__heading heading">
+                    Property Featured
+                  </h2></a
+                >
+              </div>
+            </div>
+            <p class="feature-text">
+              Real estate is a crowded field. But with the number of buyers
+              purchasing homes through real estate agents and brokers growing
+              there’s plenty of
+            </p>
+            <div class="feature__inner">
+              <div class="feature-left feature-column">
+                <div class="feature__card">
+                  <div class="card__icon">
+                    <img
+                      src="./images/secure.svg"
+                      alt="secure"
+                      class="icon-img"
+                    />
+                  </div>
+                  <div class="card__feature-info">
+                    <h4 class="feature-info-head">100% Security</h4>
+                    <p>
+                      For many of us, buying a home is a dre<br />
+                      and one not easily attainable.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature__card">
+                  <div class="card__icon">
+                    <img
+                      src="./images/conditioner.svg"
+                      alt="conditioner"
+                      class="icon-img"
+                    />
+                  </div>
+                  <div class="card__feature-info">
+                    <h4 class="feature-info-head">Free air conditioner</h4>
+                    <p>
+                      For many of us, buying a home is a dre<br />
+                      and one not easily attainable.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature__card">
+                  <div class="card__icon">
+                    <img
+                      src="./images/garden.svg"
+                      alt="garden"
+                      class="icon-img"
+                    />
+                  </div>
+                  <div class="card__feature-info">
+                    <h4 class="feature-info-head">Flower garden</h4>
+                    <p>
+                      For many of us, buying a home is a dre<br />
+                      and one not easily attainable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feature-media">
+                <img
+                  class="feature-img"
+                  src="./images/building-2.jpg"
+                  alt="build"
+                />
+              </div>
+
+              <div class="feature-right feature-column">
+                <div class="feature__card">
+                  <div class="card__icon">
+                    <img
+                      src="./images/parcers.svg"
+                      alt="parcers"
+                      class="icon-img"
+                    />
+                  </div>
+                  <div class="card__feature-info">
+                    <h4 class="feature-info-head">Parkers & movers</h4>
+                    <p>
+                      For many of us, buying a home is a dre<br />
+                      and one not easily attainable.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature__card">
+                  <div class="card__icon">
+                    <img
+                      src="./images/furniture.svg"
+                      alt="furniture"
+                      class="icon-img"
+                    />
+                  </div>
+                  <div class="card__feature-info">
+                    <h4 class="feature-info-head">Rental furniture</h4>
+                    <p>
+                      For many of us, buying a home is a dre<br />
+                      and one not easily attainable.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature__card">
+                  <div class="card__icon">
+                    <img
+                      src="./images/swiming.svg"
+                      alt="swiming"
+                      class="icon-img"
+                    />
+                  </div>
+                  <div class="card__feature-info">
+                    <h4 class="feature-info-head">Swimming pool</h4>
+                    <p>
+                      For many of us, buying a home is a dre<br />
+                      and one not easily attainable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer-logo-social">
+              <div class="logo-footer">
+                <a href="#"
+                  ><img
+                    src="./images/logo-footer.svg"
+                    alt="logo"
+                    class="img-logo-footer"
+                /></a>
+              </div>
+              <p class="footer-logo-social-slogan">
+                Contrary to popular is not simply random text. It has
+              </p>
+              <div class="footer-social">
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./images/fb.svg"
+                      alt="facebook"
+                      class="social-icon__img"
+                  /></a>
+                </div>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./images/inst.svg"
+                      alt="instagram"
+                      class="social-icon__img"
+                  /></a>
+                </div>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./images/twitter.svg"
+                      alt="twitter"
+                      class="social-icon__img"
+                  /></a>
+                </div>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./images/youtube.svg"
+                      alt="youtube"
+                      class="social-icon__img"
+                  /></a>
+                </div>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./images/link.svg"
+                      alt="linkedin"
+                      class="social-icon__img"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-about footer__blog">
+              <div class="footer__head">
+                <h5>About</h5>
+              </div>
+              <ul class="about__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Company</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Team</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Career</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Blogs</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-products footer__blog">
+              <div class="footer__head">
+                <h5>Products</h5>
+              </div>
+              <ul class="products__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">E-Books</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Preasantation</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Management</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Dashboard</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-address footer__blog">
+              <div class="footer__head">
+                <h5>Address</h5>
+              </div>
+              <ul class="address__list">
+                <li class="footer__item mono">
+                  <a href="#" class="footer__link">Country Delevery</a>
+                </li>
+                <li class="footer__item mono">
+                  <a href="#" class="footer__link">Counter Beach Post</a>
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:www.itobd.com" class="footer__link"
+                    >www.itobd.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+880176565655" class="footer__link"
+                    >+880176565655</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
