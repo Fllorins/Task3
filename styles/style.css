@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -42,7 +42,7 @@ body {
   margin: 35px auto;
 }
 .logo {
-  min-width: 250px;
+  width: 250px;
   height: auto;
 }
 .logo__link {
@@ -51,6 +51,10 @@ body {
 }
 .logo__link:hover {
   opacity: 0.8;
+}
+.logo-media {
+  width: 100%;
+  height: 100%;
 }
 .active-navbar {
   display: flex;
@@ -82,22 +86,29 @@ body {
   font-weight: 600;
   opacity: 1;
 }
+.header-btn {
+  color: #fff;
+}
 .btn__contact {
   padding: 15px 30px;
   background: var(--btn);
   color: #fff;
   border-radius: 5px;
+  white-space: nowrap;
+  text-decoration: none;
 }
 .btn__contact:hover {
   background: #4880ff;
+  color: #fff;
 }
 .btn__contact:active {
   background: #0854ff;
+  color: #fff;
 }
 
 /* whithtabs */
 .withtabs {
-  margin: 70px 0 100px 0;
+  margin: 70px 20px 100px 20px;
 }
 .container-withtabs {
   position: relative;
@@ -106,7 +117,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 100px;
+  gap: 80px;
 }
 .withtabs__info {
   max-width: 560px;
@@ -780,23 +791,172 @@ body {
   font-weight: 400;
 }
 
+.menu-toggles {
+  visibility: hidden;
+  position: absolute;
+}
+.hamb {
+  display: none;
+}
+.popup {
+  display: none;
+}
+
 /* media */
 @media (max-width: 1200px) {
-  .container-header {
-    justify-content: stretch;
+  .withtabs__inner {
+    gap: 50px;
   }
-  .logo {
-    margin-right: 100px;
+  .withtabs-tabs {
+    left: 40px;
   }
 }
 @media (max-width: 1050px) {
-  .menu__item {
-    margin-right: 25px;
-  }
   .menu {
     flex-wrap: wrap;
   }
+  .menu__item {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
   .logo {
-    margin-right: 50px;
+    margin-right: 75px;
+  }
+}
+@media (max-width: 850px) {
+  .btn__contact {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 850px) {
+  /* burger */
+  .navbar {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+  }
+  .menu {
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    /* position: fixed; */
+    visibility: hidden;
+    top: 80px;
+    left: 90px;
+    width: 100%;
+    height: 90%;
+    margin: -90px;
+    padding: 80px 0;
+    list-style: none;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hamb {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 500;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background: var(--basic);
+    transition: 0.2s;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
+  .menu__link {
+    display: block;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .popup {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 200;
+    transition: 0.3s;
+  }
+  .popup.open {
+    left: 0;
+    top: 190;
+  }
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: auto;
+    visibility: visible;
+
+    margin: -75px auto;
+  }
+  .popup .menu > li {
+    width: 100%;
+  }
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .popup .menu > li > a:hover {
+    background: rgba(122, 82, 179, 0.1);
+  }
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+  }
+  .hamb__field.active .bar:nth-child(3) {
+    top: 0;
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  body.noscroll {
+    overflow: hidden;
+  }
+  /* the end burger */
+  .container-header {
+    justify-content: stretch;
+  }
+}
+@media (max-width: 630px) {
+  .container-header {
+    margin: 20px auto;
+  }
+  .header-btn {
+    display: none;
+  }
+  .logo {
+    width: 200px;
+  }
+  .hamb {
+    top: 30px;
+    right: 30px;
   }
 }
